@@ -1,4 +1,4 @@
-/* ---------- Global styles ---------- */
+/*  Global styles  */
 
 :root {
   --navy: #07676e;
@@ -32,7 +32,7 @@ img {
   display: block;
   max-width: 100%;}
 
-/* ---------- Step 1: Overall CSS Grid layout ---------- */
+/*S Grid layout  */
 
 .page-layout {
   min-height: 100vh;
@@ -68,7 +68,7 @@ img {
   color: white;
   background:
     linear-gradient(120deg, rgba(30, 108, 132, 0.96), rgb(42 140 130 / 88%)),
-    url("[placehold.co](https://placehold.co/1600x500/17324d/ffffff?text=Portfolio)");
+    url("images/header-background.jpg");
   background-position: center;
   background-size: cover;}
 
@@ -97,8 +97,6 @@ img {
   min-height: 0;
   padding: 28px 20px 100px;
   background-color: var(--navy);
-
-  /* Sidebar is a Flexbox container. */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -131,7 +129,7 @@ img {
   border-left-color: var(--orange);
   transform: translateX(4px);}
 
-/* main content  */
+/* main  */
 
 .main-content {
   min-width: 0;
@@ -166,7 +164,7 @@ img {
   background-color: var(--orange);
   border-radius: 10px;}
 
-/*Summary, education, and experience  */
+/*Summary, education, and experience */
 
 .summary p {
   margin: 0;
@@ -211,7 +209,7 @@ img {
 .table-wrapper {
   overflow-x: auto;}
 
-/*  skills layout  */
+/*  skills   */
 
 .skills {
   display: flex;
@@ -248,7 +246,7 @@ img {
   font-size: 0.9rem;
   font-weight: 700;}
 
-/* Grid layout  */
+/* Grid   */
 
 .projects-grid {
   display: grid;
