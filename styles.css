@@ -1,10 +1,10 @@
-/* -styles  */
+/* ---------- Global styles ---------- */
 
 :root {
   --navy: #07676e;
   --navy-light: #1d8486;
   --teal: #17b4c3;
-  --orange: #5edfd7;
+  --orange: #b19113;
   --background: #edf2f5;
   --surface: #ffffff;
   --text: #24313d;
@@ -32,7 +32,7 @@ img {
   display: block;
   max-width: 100%;}
 
-/* Grid layout  */
+/* ---------- Step 1: Overall CSS Grid layout ---------- */
 
 .page-layout {
   min-height: 100vh;
