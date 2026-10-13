@@ -78,15 +78,25 @@
 
         </ul>
 
-        <a class="btn btn-warning fw-bold ms-lg-3 mt-3 mt-lg-0" href="portfolio.pdf" download>
-          Download Resume
+        <a id="downloadResumeBtn"
+        class="btn btn-warning fw-bold ms-lg-3 mt-3 mt-lg-0"
+        href="portfolio.pdf"
+        download>
+        Download Resume
         </a>
       </div>
     </div>
   </nav>
 
   <main class="container my-5">
-
+<div class="row mb-4">
+  <div class="col-12">
+    <div class="card p-4 shadow-sm">
+      <h2 class="h2">Welcome</h2>
+      <p id="greeting"></p>
+    </div>
+  </div>
+</div>
     <div class="row mb-4" id="summary">
       <div class="col-12">
         <div class="card p-4 shadow-sm">
@@ -250,6 +260,29 @@
                 </div>
               </div>
             </div>
+            <div class="col-md-4">
+          <div class="card shadow-sm">
+          <img src="https://placehold.co/600x360/0f8f9c/ffffff?text=Study+Planner+App" class="card-img-top" alt="Study Planner(Ongoing)">
+          <h3 class="h5">Study Planner</h3>
+
+          <p>
+           A web application that helps students organize
+           assignments, exams, and study schedules.
+      </p>
+
+      <p>
+        Deadline: December 15, 2026
+        <br>
+        Days Remaining:
+        <strong id="deadline-days"></strong>
+      </p>
+
+      #
+        View Project
+      </a>
+    </div>
+  </div>
+</div>
           </div>
         </div>
       </div>
@@ -287,6 +320,8 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="app.js"></script>
 
 </body>
 </html>
