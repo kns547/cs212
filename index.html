@@ -84,6 +84,10 @@
         download>
         Download Resume
         </a>
+        <p class="text-white mt-2 mb-0">
+        Downloads:
+        <span id="downloadCount">0</span>
+        </p>
       </div>
     </div>
   </nav>
@@ -115,7 +119,7 @@
         <div class="card p-4 shadow-sm">
           <h2 class="h2">Education</h2>
 
-          <table class="table table-striped table-bordered mt-3">
+          <div id="educationTable"></div>
             <caption class="text-muted">Academic Qualifications</caption>
             <thead class="table-dark">
               <tr>
@@ -142,7 +146,7 @@
         <div class="card p-4 shadow-sm">
           <h2 class="h2">Experience</h2>
 
-          <table class="table table-striped table-bordered mt-3">
+          <div id="experienceTable"></div>
             <caption class="text-muted">Professional Experience</caption>
             <thead class="table-dark">
               <tr>
@@ -170,6 +174,23 @@
     </div>
 
     <div class="row mb-4" id="skills">
+      <div class="mb-3">
+    <input
+      type="text"
+      id="skillInput"
+      class="form-control"
+      placeholder="Enter a new skill"
+    >
+
+    <button
+      id="addSkillBtn"
+      class="btn btn-teal mt-2"
+    > 
+    Add Skill
+  </button>
+</div>
+
+<div id="skillList"></div>
       <div class="col-12">
         <div class="card p-4 shadow-sm">
           <h2 class="h2">Skills</h2>
@@ -227,7 +248,7 @@
         <div class="card p-4 shadow-sm">
           <h2 class="h2">Projects</h2>
 
-          <div class="row g-4 mt-3">
+          <div id="projectsContainer" class="row g-4 mt-3"></div>
             <div class="col-md-4">
               <div class="card shadow-sm">
                 <img src="https://placehold.co/600x360/17324d/ffffff?text=Task+Dashboard" class="card-img-top">
