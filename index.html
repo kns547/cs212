@@ -1,348 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio and resume of Katya Safsten.">
-  <title>Katya Safsten | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katya Safsten | Portfolio</title>
 
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Roboto&display=swap"
-    rel="stylesheet"
-  >
+    <style>
+        body {
+            background-color: #edf2f5;
+            padding-top: 150px;
+        }
 
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #edf2f5;
-      padding-top: 160px;
-    }
+        .bg-navy-gradient {
+            background: linear-gradient(
+                120deg,
+                #07676e,
+                #17b4c3
+            );
+        }
 
-    h1, h2, h3 {
-      font-family: 'Poppins', sans-serif;
-    }
+        .btn-teal {
+            background-color: #17b4c3;
+            color: white;
+        }
 
-    .bg-navy-gradient {
-      background: linear-gradient(120deg, #07676e, #17b4c3);
-    }
+        .btn-teal:hover {
+            background-color: #0e8a94;
+            color: white;
+        }
 
-    .btn-teal {
-      background-color: #17b4c3;
-      color: white;
-    }
+        #skillList .skill-item {
+            background-color: white;
+        }
 
-    .btn-teal:hover {
-      background-color: #0e8a94;
-      color: white;
-    }
-  </style>
+        .card-img-top {
+            height: 220px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
 
-  <header class="bg-navy-gradient text-white py-4 fixed-top">
-    <div class="container text-center">
-      <p class="text-uppercase small fw-bold">Resume Portfolio</p>
-      <h1 class="display-4">Katya Safsten</h1>
-      <p class="lead">Software Engineering Student</p>
-    </div>
-  </header>
+    <header class="bg-navy-gradient text-white py-4 fixed-top">
+        <div class="container text-center">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-navy-gradient fixed-top mt-5">
-    <div class="container-fluid">
+            <p class="text-uppercase fw-bold mb-1">
+                Resume Portfolio
+            </p>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <h1>
+                Katya Safsten
+            </h1>
 
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav gap-2">
-
-          <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#aspirations">Aspirations</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-
-        </ul>
-
-        <a id="downloadResumeBtn"
-        class="btn btn-warning fw-bold ms-lg-3 mt-3 mt-lg-0"
-        href="portfolio.pdf"
-        download>
-        Download Resume
-        </a>
-        <p class="text-white mt-2 mb-0">
-        Downloads:
-        <span id="downloadCount">0</span>
-        </p>
-      </div>
-    </div>
-  </nav>
-
-  <main class="container my-5">
-<div class="row mb-4">
-  <div class="col-12">
-    <div class="card p-4 shadow-sm">
-      <h2 class="h2">Welcome</h2>
-      <p id="greeting"></p>
-    </div>
-  </div>
-</div>
-    <div class="row mb-4" id="summary">
-      <div class="col-12">
-        <div class="card p-4 shadow-sm">
-          <h2 class="h2">Professional Summary</h2>
-          <p class="lead">
-            Aspiring software engineer with a passion for coding and user experience design.
-            Skilled in HTML, CSS, and C, with a strong foundation in responsive design and accessibility.
-            Eager to contribute to innovative projects and collaborate with cross-functional teams.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row mb-4" id="education">
-      <div class="col-12">
-        <div class="card p-4 shadow-sm">
-          <h2 class="h2">Education</h2>
-
-          <div id="educationTable"></div>
-            <caption class="text-muted">Academic Qualifications</caption>
-            <thead class="table-dark">
-              <tr>
-                <th>Arizona Virtual Tech Academy</th>
-                <th>High School Diploma</th>
-                <th>August 2022 - May 2025</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Northern Arizona University</td>
-                <td>Undergraduate Student; Software Engineering</td>
-                <td>August 2025 - Present</td>
-              </tr>
-            </tbody>
-          </table>
+            <p class="lead">
+                Software Engineering Student
+            </p>
 
         </div>
-      </div>
-    </div>
+    </header>
 
-    <div class="row mb-4" id="experience">
-      <div class="col-12">
-        <div class="card p-4 shadow-sm">
-          <h2 class="h2">Experience</h2>
 
-          <div id="experienceTable"></div>
-            <caption class="text-muted">Professional Experience</caption>
-            <thead class="table-dark">
-              <tr>
-                <th>Panda Express</th>
-                <th>Front of House Associate</th>
-                <th>June 2026 - Present</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Pound Puppz</td>
-                <td>Volunteer</td>
-                <td>May 2020 - Present</td>
-              </tr>
-              <tr>
-                <td>Shady Pines Sanctuary</td>
-                <td>Senior Volunteer</td>
-                <td>September 2022 - Present</td>
-              </tr>
-            </tbody>
-          </table>
+    <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mt-5">
 
-        </div>
-      </div>
-    </div>
+        <div class="container">
 
-    <div class="row mb-4" id="skills">
-      <div class="mb-3">
-    <input
-      type="text"
-      id="skillInput"
-      class="form-control"
-      placeholder="Enter a new skill"
-    >
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
 
-    <button
-      id="addSkillBtn"
-      class="btn btn-teal mt-2"
-    > 
-    Add Skill
-  </button>
-</div>
+                <span class="navbar-toggler-icon"></span>
 
-<div id="skillList"></div>
-      <div class="col-12">
-        <div class="card p-4 shadow-sm">
-          <h2 class="h2">Skills</h2>
+            </button>
 
-          <div class="row g-4 mt-3">
+            <div
+                class="collapse navbar-collapse"
+                id="navbarNav">
 
-            <div class="col-md-4">
-              <div class="card border-info p-3">
-                <h3 class="h5">Soft Skills</h3>
-                <span class="badge bg-info text-dark me-1">Communication</span>
-                <span class="badge bg-info text-dark me-1">Time Management</span>
-                <span class="badge bg-info text-dark me-1">Adaptability</span>
-                <span class="badge bg-info text-dark me-1">Problem-solving</span>
-              </div>
+                <ul
+                    class="navbar-nav mx-auto"
+                    id="navMenu">
+                </ul>
+
+                <a
+                    id="downloadResumeBtn"
+                    href="portfolio.pdf"
+                    download
+                    class="btn btn-warning">
+
+                    Download Resume
+
+                </a>
+
+                <span
+                    class="text-white ms-3">
+
+                    Downloads:
+                    <span id="downloadCount">0</span>
+
+                </span>
+
             </div>
 
-            <div class="col-md-4">
-              <div class="card border-info p-3">
-                <h3 class="h5">Technology Proficiency</h3>
-                <span class="badge bg-info text-dark me-1">C</span>
-                <span class="badge bg-info text-dark me-1">HTML</span>
-                <span class="badge bg-info text-dark me-1">CSS</span>
-                <span class="badge bg-info text-dark me-1">Python</span>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card border-info p-3">
-                <h3 class="h5">Tools</h3>
-                <span class="badge bg-info text-dark me-1">GitHub</span>
-                <span class="badge bg-info text-dark me-1">VS Code</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row mb-4" id="aspirations">
-      <div class="col-12">
-        <div class="card p-4 shadow-sm">
-          <h2 class="h2">Aspirations</h2>
-          <p>
-            I aspire to become a proficient software engineer, contributing to innovative projects
-            that enhance user experiences. My goal is to continuously learn and adapt to new technologies,
-            while collaborating with diverse teams to create impactful solutions.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row mb-4" id="projects">
-      <div class="col-12">
-        <div class="card p-4 shadow-sm">
-          <h2 class="h2">Projects</h2>
-
-          <div id="projectsContainer" class="row g-4 mt-3"></div>
-            <div class="col-md-4">
-              <div class="card shadow-sm">
-                <img src="https://placehold.co/600x360/17324d/ffffff?text=Task+Dashboard" class="card-img-top">
-                <div class="card-body">
-                  <h3 class="h5">Task Dashboard</h3>
-                  <p>A responsive dashboard for organizing assignments and deadlines.</p>
-                  <a href="#" class="btn btn-teal">View Project</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card shadow-sm">
-                <img src="https://placehold.co/600x360/1f6f78/ffffff?text=Portfolio+Website" class="card-img-top">
-                <div class="card-body">
-                  <h3 class="h5">Portfolio Website</h3>
-                  <p>A responsive portfolio built with semantic HTML and modern CSS.</p>
-                  <a href="#" class="btn btn-teal">View Project</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card shadow-sm">
-                <img src="https://placehold.co/600x360/8a4f7d/ffffff?text=C+Programming+Project" class="card-img-top">
-                <div class="card-body">
-                  <h3 class="h5">C Programming Project</h3>
-                  <p>A command-line application created to practice problem-solving in C.</p>
-                  <a href="#" class="btn btn-teal">View Project</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-          <div class="card shadow-sm">
-          <img src="https://placehold.co/600x360/0f8f9c/ffffff?text=Study+Planner+App" class="card-img-top" alt="Study Planner(Ongoing)">
-          <h3 class="h5">Study Planner</h3>
-
-          <p>
-           A web application that helps students organize
-           assignments, exams, and study schedules.
-      </p>
-
-      <p>
-        Deadline: December 15, 2026
-        <br>
-        Days Remaining:
-        <strong id="deadline-days"></strong>
-      </p>
-
-      #
-        View Project
-      </a>
-    </div>
-  </div>
-</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </main>
-
-  <footer id="contact" class="bg-navy-gradient text-white py-4 mt-5">
-    <div class="container">
-      <div class="row align-items-center">
-
-        <div class="col-md-6">
-          <h2 class="h5">Contact Information</h2>
         </div>
 
-        <div class="col-md-6 text-md-end">
-          <a
-            href="https://www.linkedin.com/in/katya-safsten-878237367"
-            class="text-white me-3"
-            target="_blank"
-          >
-            LinkedIn
-          </a>
+    </nav>
 
-          <a
-            href="https://github.com/kns547"
-            class="text-white"
-            target="_blank"
-          >
-            GitHub
-          </a>
+    <main class="container my-5">
+
+        <section class="card p-4 shadow-sm mb-4">
+
+            <h2>Welcome</h2>
+
+            <p id="greeting"></p>
+
+        </section>
+
+        <section
+            id="summary"
+            class="card p-4 shadow-sm mb-4">
+
+            <h2>Professional Summary</h2>
+
+            <p>
+                Aspiring software engineer with a passion
+                for coding, software development, and
+                user experience design.
+            </p>
+
+        </section>
+
+        <section
+            id="education"
+            class="card p-4 shadow-sm mb-4">
+
+            <h2>Education</h2>
+
+            <div id="educationTable"></div>
+
+        </section>
+
+        <section
+            id="experience"
+            class="card p-4 shadow-sm mb-4">
+
+            <h2>Experience</h2>
+
+            <div id="experienceTable"></div>
+
+        </section>
+
+        <section
+            id="skills"
+            class="card p-4 shadow-sm mb-4">
+
+            <h2>Skills</h2>
+
+            <div class="mb-3">
+
+                <input
+                    type="text"
+                    id="skillInput"
+                    class="form-control"
+                    placeholder="Enter a skill">
+
+                <button
+                    id="addSkillBtn"
+                    class="btn btn-teal mt-2">
+
+                    Add Skill
+
+                </button>
+
+                <p
+                    id="skillMessage"
+                    class="text-danger mt-2">
+                </p>
+
+            </div>
+
+            <div id="skillList"></div>
+
+        </section>
+
+
+        <section
+            id="aspirations"
+            class="card p-4 shadow-sm mb-4">
+
+            <h2>Aspirations</h2>
+
+            <p>
+                My goal is to become a proficient software
+                engineer and contribute to innovative,
+                user-focused projects while continuing
+                to grow my technical skills.
+            </p>
+
+        </section>
+
+        <section
+            id="projects"
+            class="card p-4 shadow-sm mb-4">
+
+            <h2>Projects</h2>
+
+            <button
+                id="sortProjectsBtn"
+                class="btn btn-teal mb-3">
+
+                Sort By Deadline
+
+            </button>
+
+            <div
+                id="projectsContainer"
+                class="row g-4">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer
+        id="contact"
+        class="bg-navy-gradient text-white py-4">
+
+        <div class="container text-center">
+
+            <h2>Contact Information</h2>
+
+            <a
+                href="https://github.com/kns547"
+                target="_blank"
+                class="text-white me-3">
+
+                GitHub
+
+            </a>
+
+            <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                class="text-white">
+
+                LinkedIn
+
+            </a>
+
         </div>
 
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </footer>
 
-<script src="app.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js">
+    </script>
+
+    <script src="app.js"></script>
 
 </body>
 </html>
